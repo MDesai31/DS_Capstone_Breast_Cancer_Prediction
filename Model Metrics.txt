@@ -1,0 +1,27 @@
+Final Model: XGBoost
+
+Features Used:
+Clump_Thickness, Cell_Size_Uniformity,Cell_Shape_Uniformity, Marginal_Adhesion, Single_Epi_Cell_Size, Bare_Nuclei, Bland_Chromatin, Normal Nucleoli, Mitoses
+
+Hyperparameters:
+Booster: gbtree
+learning_rate: 0.3
+gamma: 0
+max_depth: 6
+min_child_weight: 1
+sampling_method: uniform
+
+Model Performance:
+  A) Classification Report
+    precision    recall  f1-score   support
+
+0       0.99      0.98      0.99      6423
+1       0.97      0.98      0.97      3407
+ 
+  B) Confusion Matrix
+[[6303  120]
+ [  57 3350]]
+
+  C) ROC-AUC Scores
+Train Score: 0.998952
+Test Score: 0.998490
